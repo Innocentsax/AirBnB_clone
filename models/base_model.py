@@ -9,12 +9,12 @@ from datetime import datetime
 
 class BaseModel:
     """
-    A class that defines all common attributes/methods for other classes
+     This is a class that defines all common attributes/methods for other classes
     """
 
     def __init__(self, *args, **kwargs):
         """
-        Initialize the BaseModel class
+        This initialize the BaseModel class
         """
 
         from models import storage
@@ -32,7 +32,7 @@ class BaseModel:
 
     def __str__(self):
         """
-        Returns the string representation of BaseModel object.
+        This returns the string representation of BaseModel object.
         [<class name>] (<self.id>) <self.__dict__>
         """
         return "[{}] ({}) {}".format(type(self).__name__, self.id,
@@ -40,7 +40,7 @@ class BaseModel:
 
     def save(self):
         """
-        Updates 'self.updated_at' with the current datetime
+        This updates 'self.updated_at' with the current datetime
         """
         from models import storage
         self.updated_at = datetime.now()
@@ -48,12 +48,12 @@ class BaseModel:
 
     def to_dict(self):
         """
-        returns a dictionary containing all keys/values of __dict__
+        This eturns a dictionary containing all keys/values of __dict__
         of the instance:
 
-        - only instance attributes set will be returned
+        - only the instance attributes set will be returned
         - a key __class__ is added with the class name of the object
-        - created_at and updated_at must be converted to string object in ISO
+        - this created_at and updated_at must be converted to string object in ISO
         object
         """
         dict_1 = self.__dict__.copy()
