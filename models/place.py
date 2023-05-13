@@ -1,24 +1,24 @@
 #!/usr/bin/python3
-"""Contains the Place model"""
+""" module for Place class """
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
     """
-    Implements the Place model
+    initiation of Place that inherits from BaseModel class
 
-    Args:
-        city_id (str): The City id.
-        user_id (str): The User id.
-        name (str): The name of the place.
-        description (str): The description of the place.
-        number_rooms (int): The number of rooms of the place.
-        number_bathrooms (int): The number of bathrooms of the place.
-        max_guest (int): The maximum number of guests of the place.
-        price_by_night (int): The price by night of the place.
-        latitude (float): The latitude of the place.
-        longitude (float): The longitude of the place.
-        amenity_ids (list): A list of Amenity ids.
+    Public Class Attributes:
+       (string) city_id: initialized as empty string
+       (string) user_id: initialized as empty string
+       (string) name: initialized as empty string
+       (string) description: initialized as empty string
+       (integer) number_rooms: intialized as zero
+       (integer) number_bathrooms: initialized as zero
+       (integer) max_guest: initialized as 0
+       (integer) price_by_night: initialized as 0
+       (float) latitude: initialized as 0.0
+       (float) longitude: initialized as 0.0
+       (list of strings) amenity_ids: initialized as empty list
     """
     city_id = ""
     user_id = ""

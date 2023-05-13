@@ -1,9 +1,15 @@
 #!/usr/bin/python3
-"""This contains the City model"""
+""" module for City class """
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """This implements the City class"""
+    """
+    initiation of City that inherits from BaseModel class
+
+    Public Class Attributes:
+       (string) state_id: initialized as empty string
+       (string) name: initialized as empty string
+    """
     state_id = ""
     name = ""
