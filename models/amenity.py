@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-""" module for Amenity class """
+"""This module creates a Amenity class"""
+
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """
-    initiation of Amenity that inherits from BaseModel class
+    """Class for managing amenity objects"""
 
-    Public Class Attributes:
-       (string) name: initialized as empty string
-    """
     name = ""
