@@ -54,11 +54,3 @@ class BaseModel:
         my_dict["created_at"] = my_dict["created_at"].isoformat()
         my_dict["updated_at"] = my_dict["updated_at"].isoformat()
         return my_dict
-    def update(self, **kwargs):
-        """Updates the instance attributes with the provided key-value pairs"""
-
-        for key, value in kwargs.items():
-            if key != "id" and key != "created_at" and key != "updated_at":
-                setattr(self, key, value)
-        self.__dict__["updated_at"] = datetime.now()  # Update the 'updated_at' attribute
-        self.save()
