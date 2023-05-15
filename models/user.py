@@ -4,7 +4,7 @@ from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """Class for managing user objects"""
+    """This is the class for managing user objects"""
 
     email = ""
     password = ""

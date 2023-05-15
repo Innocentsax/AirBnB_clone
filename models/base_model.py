@@ -8,10 +8,10 @@ from models import storage
 
 class BaseModel:
 
-    """Class from which all other classes will inherit"""
+    """This is the class from which all other classes will inherit"""
 
     def __init__(self, *args, **kwargs):
-        """Initializes instance attributes
+        """This initializes instance attributes
 
         Args:
             - *args: list of arguments
@@ -47,7 +47,7 @@ class BaseModel:
         storage.save()
 
     def to_dict(self):
-        """returns a dictionary containing all keys/values of __dict__"""
+        """This returns a dictionary containing all keys/values of __dict__"""
 
         my_dict = self.__dict__.copy()
         my_dict["__class__"] = type(self).__name__
