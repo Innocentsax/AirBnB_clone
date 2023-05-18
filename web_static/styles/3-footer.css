@@ -1,0 +1,13 @@
+footer {
+    background-color: white;
+    height:60px;
+    width:100%;
+    border-top: 1px solid #CCCCCC;
+
+    bottom: 0;
+}
+
+p {
+    text-align:center;
+    line-height:30px;
+}
